@@ -109,11 +109,13 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CALL_BACK_URL = "http://127.0.0.1:8000/index"
 CONSUMER_KEY = "K6BJBDOAHoyNxH29cvmmllnlsi3TypRx"
 CONSUMER_SECRET = "eNoGp0cuDA45vxOG"
 BUSINESS_SHORT_CODE = "174379"
-TRANSACTION_TYPE = ""
-ACCOUNT_REFERENCE = ""
-API_RESOURCE_URL = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v2/processrequest"
+TRANSACTION_TYPE = "CustomerPayBillOnline"
+TRANSACTION_DESCRIPTION = "Payment for X"
+ACCOUNT_REFERENCE = "DMV"
+API_RESOURCE_URL ="https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
 ACCESS_TOKEN_URL = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
 LIPANAMPESA_PASSKEY = load_dotenv("LIPANAMPESA_PASSKEY")
