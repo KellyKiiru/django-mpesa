@@ -12,6 +12,8 @@ from .access_token import generate_access_token
 from .utils import timestamp_conversion
 from  .encode_base64 import generate_password
 
+
+
 def index(request):
     return HttpResponse("sfneo")
 
@@ -26,6 +28,10 @@ class TestView(APIView):
     
     
 class MakePayment(APIView):
+    
+    def get(self, request):
+        return Response("some data")
+    
     def post(self, request, *args, **kwargs):
         request_data = request.data
         
