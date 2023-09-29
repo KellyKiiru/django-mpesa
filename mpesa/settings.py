@@ -10,7 +10,7 @@ SECRET_KEY = 'django-insecure-3y8kb@!mm3!k8k%(6n8h54a(4*_2gs+c58hkww5h&73k8x*4!f
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 INSTALLED_APPS = [
@@ -119,3 +119,4 @@ ACCOUNT_REFERENCE = "DMV"
 API_RESOURCE_URL ="https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
 ACCESS_TOKEN_URL = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
 LIPANAMPESA_PASSKEY = load_dotenv("LIPANAMPESA_PASSKEY")
+
