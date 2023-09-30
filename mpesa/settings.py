@@ -120,3 +120,4 @@ API_RESOURCE_URL ="https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processreque
 ACCESS_TOKEN_URL = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
 LIPANAMPESA_PASSKEY = load_dotenv("LIPANAMPESA_PASSKEY")
 
+CSRF_COOKIE_SECURE = False
