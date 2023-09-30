@@ -79,4 +79,4 @@ class MakePayment(APIView):
             "response_code": response_code
         }
         
-        return data
+        print(headers)
