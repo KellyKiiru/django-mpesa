@@ -3,7 +3,7 @@ from requests import auth
 from requests.auth import HTTPBasicAuth
 from django.conf import settings
 
-import keys
+from . import keys
 
 
 def generate_access_token():
